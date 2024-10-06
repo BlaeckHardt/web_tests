@@ -4,7 +4,7 @@
     color: #7a4f4f;   /* Color gris claro para los párrafos no activos */
     text-align: center;  /* Centrado */
     margin: 15px 0;
-    transition: all 0.4s ease-in-out; /* Transición suave para los cambios */
+    transition: all 0.02s ease-in-out; /* Transición suave para los cambios */
 }
 
 /* Estilo del párrafo activo */
