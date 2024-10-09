@@ -1,4 +1,9 @@
 /* Estilo base para los párrafos */
+body {
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+  }
+
 #song-content p {
     font-size: 16px;  /* Tamaño de fuente base */
     color: #7a4f4f;   /* Color gris claro para los párrafos no activos */
@@ -14,3 +19,65 @@
     font-weight: bold; /* Negrita para mayor énfasis */
 }
 
+#song-title {
+    text-align: center; /* Centrar el texto horizontalmente */
+    font-size: 44px;    /* Tamaño de fuente opcional */
+    margin: 20px 0;     /* Espaciado superior e inferior */
+}
+
+.button-container {
+    display: flex;         /* Usar Flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    margin-top: 20px;      /* Margen opcional para separar del contenido superior */
+}
+
+button {
+    margin: 0 10px;        /* Espacio entre los botones */
+}
+
+button {
+    --color: #0077ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 6em;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    cursor: pointer;
+    margin: 20px;
+    font-size: 17px;
+    z-index: 1;
+    color: var(--color);
+    border: 2px solid var(--color);
+    border-radius: 6px;
+    position: relative;
+  }
+  
+  button::before {
+    position: absolute;
+    content: "";
+    background: var(--color);
+    width: 150px;
+    height: 200px;
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  button:hover {
+    color: white;
+  }
+  
+  button:before {
+    top: 100%;
+    left: 100%;
+    transition: 0.3s all;
+  }
+  
+  button:hover::before {
+    top: -30px;
+    left: -30px;
+  }
+
+  html {
+    scroll-behavior: smooth; /* Desplazamiento suave */
+}
