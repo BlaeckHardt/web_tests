@@ -1,6 +1,7 @@
 /* Estilo general para las tarjetas */
 body {
   background-color: aqua;
+  font-family: Arial, sans-serif;
 }
 
 .card {
@@ -17,15 +18,15 @@ body {
   /* Efecto de hover */
 .card:hover {
     transform: scale(1.05);
+    box-shadow: 0px 0px 10px 2px #5a5a5a;
   }
-  
+
   /* Contenedor de tarjetas */
 #card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-
 
 @media (max-width: 768px) {
     #card-container {
