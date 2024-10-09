@@ -38,7 +38,7 @@ function generarTarjetas(filtrarHoy = false) {
         const tarjeta = document.createElement("div");
         tarjeta.className = "card";
         tarjeta.innerHTML = `
-            <h3>${elemento.titulo}</h3>
+            <h2>${elemento.titulo}</h2>
             <p>${elemento.descripcion}</p>
         `;
         
